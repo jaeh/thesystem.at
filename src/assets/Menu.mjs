@@ -27,9 +27,21 @@ export const View = (props = {}) => {
 }
 
 export const style = v => ({
-  float: 'right',
-  margin: '1.5em 0 0',
+  backgroundColor: v.background.dark,
+  bottom: 'auto',
+  margin: 0,
+  padding: '0.5em 0.25em 0.2em 0',
+  position: 'fixed',
+  textAlign: 'center',
+  top: 0,
+  width: '100vw',
   position: 'relative',
+  zIndex: 2,
+  float: 'right',
+
+  '.light &&': {
+    backgroundColor: v.background.light,
+  },
 
   '.Logo svg': {
     height: '17px',
@@ -57,6 +69,12 @@ export const style = v => ({
   },
 
   [`@media screen and (min-width: ${v.widths.laptop})`]: {
+    float: 'right',
+    padding: '1em 0.25em 0.2em 0',
+    position: 'relative',
+    textAlign: 'right',
+    width: 'auto',
+
     '.Logo': {
       display: 'none',
     },

@@ -31,22 +31,6 @@ export const style = v => ({
     margin: '0 auto',
   },
 
-  '.Menu': {
-    backgroundColor: v.background.dark,
-    bottom: 'auto',
-    margin: 0,
-    padding: '0.5em 0.25em 0.2em 0',
-    position: 'fixed',
-    textAlign: 'center',
-    top: 0,
-    width: '100vw',
-    zIndex: 2,
-
-    '.light &&': {
-      backgroundColor: v.background.light,
-    },
-  },
-
   '.Branding': {
     svg: {
       height: '2.6em',
@@ -85,13 +69,6 @@ export const style = v => ({
 
     '.Branding': {
       float: 'left',
-    },
-    '.Menu': {
-      float: 'right',
-      padding: '1em 0.25em 0.2em 0',
-      position: 'relative',
-      textAlign: 'right',
-      width: 'auto',
     },
   },
 })
