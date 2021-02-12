@@ -31,7 +31,7 @@ export const style = vars => ({
   position: 'relative',
   width: '100%',
   display: 'inline-block',
-  margin: '0 0 5em',
+  margin: '0 0 2em',
 
   '.Dots': {
     position: 'relative',
@@ -58,10 +58,11 @@ export const style = vars => ({
   },
 
   '.photographer': {
-    fontSize: '0.8em',
+    fontSize: '0.7em',
     width: '100%',
     float: 'left',
     margin: '1em 0 0 0',
+    fontStyle: 'italic',
 
     '> div': {
       maxWidth: '1800px',
@@ -82,10 +83,6 @@ export const style = vars => ({
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
     clear: 'none',
-
-    '&:first-child': {
-      margin: '-3em 0 0',
-    },
 
     img: {
       margin: '1vw 0 0',
