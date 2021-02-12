@@ -31,6 +31,10 @@ export const style = v => ({
   margin: '1.5em 0 0',
   position: 'relative',
 
+  '.Logo svg': {
+    height: '17px',
+  },
+
   li: {
     float: 'left',
     margin: '0 .5em 0 0',
