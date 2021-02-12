@@ -8,7 +8,7 @@ export const View = (props = {}) => {
   return header(
     { class: 'Header' },
     div({ class: 'Container' }, [
-      menu && Menu({ url, hash, root, menu }),
+      menu && Menu({ url, hash, root, menu, theme }),
 
       Link({ class: 'Branding', to: root }, [
         svg({ viewBox: '0 0 54 60' }, [
@@ -47,15 +47,17 @@ export const style = v => ({
     },
   },
 
-  a: {
-    textDecoration: 'none',
+  '.Branding': {
+    svg: {
+      height: '2.6em',
+      width: 'auto',
+      float: 'left',
+      margin: '0.25em 0.7em 0.25em 0',
+    },
   },
 
-  svg: {
-    height: '2.6em',
-    width: 'auto',
-    float: 'left',
-    margin: '0.25em 0.7em 0.25em 0',
+  a: {
+    textDecoration: 'none',
   },
 
   'h1, h2': {
