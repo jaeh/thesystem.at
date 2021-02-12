@@ -2,7 +2,7 @@ export const state = {
   logotext: 'Collective',
 }
 
-export const View = ({ artists, collectives }) => [
+export const View = ({ artists, collectives, team }) => [
   Picture({ src: '/img/hero', type: 'jpg', height: 900, width: 1200 }),
 
   Content([
@@ -48,7 +48,7 @@ export const View = ({ artists, collectives }) => [
 
       p([
         'Our method is the intermixture of virtual, imaginary worlds with reality,',
-        ' allowing the free placement of works of art in public spaces.',
+        ' allowing the free placement of artworks in public spaces.',
       ]),
 
       p(
@@ -127,6 +127,8 @@ export const View = ({ artists, collectives }) => [
     height: 360,
     width: 1000,
   }),
+
+  Content([Slogan('Team'), Text(Team(team))]),
 
   Content([
     Slogan('Partners'),

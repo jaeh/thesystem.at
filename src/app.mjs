@@ -106,6 +106,12 @@ export const state = {
     },
   ],
 
+  team: [
+    { name: 'LITTO', job: ['ARTISTIC DIRECTION', '3D ART, DESIGN'], url: 'https://litto.work' },
+    { name: 'JASCHA', job: ['PROGRAMMING', '3D ART'], url: 'https://jaeh.at' },
+    { name: 'DAVID', job: ['3D ART'], url: 'https://wuchte.at' },
+  ],
+
   seo: {
     name: 'TheSystemCollective',
     url: 'https://thesystem.at/',
