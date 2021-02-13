@@ -155,7 +155,7 @@ export default (v = {}) => {
 
     '.sections': {
       display: 'inline-block',
-      margin: '0 0 0 1em',
+      margin: '0 2em',
 
       h2: {
         padding: 0,
@@ -241,7 +241,7 @@ export default (v = {}) => {
     [`@media screen and (min-width: ${v.widths.laptop})`]: {
       '.sections': {
         float: 'right',
-        width: '47vw',
+        width: '47%',
 
         section: {
           clear: 'none',
