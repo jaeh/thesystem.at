@@ -1,7 +1,9 @@
 export const View = team =>
   ul(
     { class: 'Team' },
-    team.map(member => li([h3(a({ href: member.url }, member.name)), member.job.map(j => p(j))])),
+    team.map(member =>
+      li([h3(Link({ href: member.url }, member.name)), member.job.map(j => p(j))]),
+    ),
   )
 
 export const style = v => ({
