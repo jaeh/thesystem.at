@@ -7,4 +7,5 @@ export const style = {
   margin: '0 0 1em',
   maxWidth: '800px',
   lineHeight: 1,
+  width: '100%',
 }
