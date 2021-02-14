@@ -46,7 +46,8 @@ export default (v = {}) => {
 
     body: {
       fontSize: '20px',
-      fontFamily: 'notosans, sans-serif',
+      fontFamily:
+        'notosans, ubuntu, "Segoe UI", roboto, "Lucida Grande", "Helvetica Neue", helvetica, arial, sans-serif',
       overflowX: 'initial',
       lineHeight: 1.2,
     },
